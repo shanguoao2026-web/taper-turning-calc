@@ -1,0 +1,27 @@
+{
+  "name": "taper-turning-calc",
+  "version": "1.0.0",
+  "description": "Lathe taper ratio, compound-slide angle, and tailstock offset calculator",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "taper-turning-calc": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node test/cli.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "5.9.3"
+  }
+}
